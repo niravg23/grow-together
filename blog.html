@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stylesheets/utilities.css" />
+    <link rel="stylesheet" href="stylesheets//blog.css" />
+    <title>Read Our Blog</title>
+  </head>
+  <body>
+    <header class="header overlay" id="header">
+      <nav class="navbar top" id="navbar">
+        <div class="logo" id="logo">
+          <a href="./index.html">
+            <span><i class="fas fa-chart-line"></i>Grow</span> Together</a
+          >
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="./index.html" class="home">Home</a>
+          <a href="./index.html#services" class="about">About</a>
+          <a href="./index.html#main3" class="cases">Cases</a>
+          <a href="./index.html#main4" class="blog">Blog</a>
+          <a href="./index.html#main6" class="main6">Contact</a>
+        </div>
+      </nav>
+      <div class="showcase" id="showcase">
+        <h1 class="heading" id="heading">Our Blog</h1>
+    </header>
+    <main class="main" id="main">
+        <section class="main main1" id="main1">
+            <div class="image image1" id="image1">
+                <img src="./images/blog/blog1.jpg" alt="">
+            </div>
+            <div class="post post1" id="post1">
+                <div class="container" id="container">
+                    <h1>Blog Post One</h1>
+                    <p><i class="fas fa-user"></i>Posted by <strong>Jane Wilson</strong>| July 19, 2021</p>
+                    <p class="content" id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iure similique facere veniam perspiciatis eveniet hic repellendus possimus temporibus ad beatae recusandae nostrum, aliquid, reiciendis consectetur fuga asperiores earum praesentium?</p>
+                    <a href="./blog/post1.html"><button class="btn">Read More</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="main main2" id="main2">
+            <div class="post post2" id="post2">
+                <div class="container" id="container">
+                    <h1>Blog Post Two</h1>
+                    <p><i class="fas fa-user"></i>Posted by <strong>Jane Wilson</strong>| July 23, 2021</p>
+                    <p class="content" id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minus facilis atque voluptatum hic quasi maxime aperiam eos earum tenetur. Quod suscipit quo illum. Eveniet iure debitis minima doloremque quasi!</p>
+                    <a href="./blog/post2.html"><button class="btn">Read More</button></a>
+                </div>
+            </div>
+            <div class="image image2" id="image2">
+                    <img src="./images/blog/blog2.jpg" alt="">
+            </div>   
+        </section>
+        <section class="main main3" id="main3">
+            <div class="image image3" id="image3">
+                <img src="./images/blog/blog3.jpg" alt="">
+            </div>
+            <div class="post post3" id="post3">
+                <div class="container" id="container">
+                    <h1>Blog Post Three</h1>
+                    <p><i class="fas fa-user"></i>Posted by <strong>Jane Wilson</strong>| July 27, 2021</p>
+                    <p class="content" id="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum veniam iusto cumque aliquid, architecto qui quas id, sequi, nobis odit commodi minima placeat reprehenderit iure! Soluta deserunt accusantium consequuntur reiciendis.</p>
+                    <a href="./blog/post3.html"><button class="btn">Read More</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+  </main>
+  <footer>
+    <div class="flex">
+    <div class="icons" id="icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <div class="text" id="text">
+      Copyright &copy; 2021
+    </div>
+  </div>
+  </footer>
+
+    <script>
+      
+    const navabr= document.querySelector('#navbar')
+    let scrolled=false
+    window.onscroll= function(){
+      if(window.pageYOffset>70){
+        navabr.classList.remove('top')
+        if(!scrolled) {
+          navabr.style.transform='translateY(-70px)';
+        }
+        setTimeout(function(){
+          navbar.style.transform='translateY(0)'
+          scrolled=true;
+        },200)
+      }
+      else{
+        navabr.classList.add('top')
+        scrolled=false;
+      }
+    }
+    </script>
+    
+</body>
+</html>

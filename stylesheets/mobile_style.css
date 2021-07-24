@@ -1,0 +1,76 @@
+header #navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  height: auto;
+}
+
+#header #navbar #logo {
+  padding: 0;
+  margin: 10px 20px 10px;
+  font-size: 2rem;
+}
+
+#header nav #nav-links {
+  padding: 0 0px;
+}
+
+#header nav #nav-links a {
+  padding: 0px 5px;
+  font-size: 1.1rem;
+}
+
+#header #showcase {
+  padding: 30px;
+}
+
+main #services {
+  flex-direction: column;
+}
+
+main #main2 {
+  flex-direction: column;
+}
+
+section#main3 .container {
+  padding: 20px;
+}
+
+#main3 .container p {
+  text-align: center;
+}
+
+#gallery img {
+  flex: 100%;
+  max-width: 100%;
+  padding: 4px;
+}
+
+#main4 {
+  flex-direction: column;
+}
+
+#main4 #image {
+  display: none;
+}
+
+section#main5 .container {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+#main5 #members {
+  flex-direction: column;
+}
+
+#main5 #members #team {
+  flex: 100%;
+  max-width: 100%;
+}
+
+#main6 {
+  flex-direction: column;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../stylesheets/utilities.css" />
+    <link rel="stylesheet" href="./post1.css">
+    <title>Read Our Blog</title>
+</head>
+<body>
+    <header class="header overlay" id="header">
+        <nav class="navbar top" id="navbar">
+          <div class="logo" id="logo">
+            <a href="../index.html">
+              <span><i class="fas fa-chart-line"></i>Grow</span> Together</a
+            >
+          </div>
+          <div class="nav-links" id="nav-links">
+            <a href="../index.html" class="home">Home</a>
+            <a href="../index.html#services" class="about">About</a>
+            <a href="../index.html#main3" class="cases">Cases</a>
+            <a href="../blog.html" class="blog">Blog</a>
+            <a href="../index.html#main6" class="main6">Contact</a>
+          </div>
+        </nav>
+        <div class="showcase" id="showcase">
+          <h1 class="heading" id="heading">Our Blog</h1>
+      </header>
+      <main class="main" id="main">
+          <div class="post" id="post">
+              <div class="container">
+                  
+            <div class="image">
+                <img src="../images/blog/blog3.jpg" alt="">
+            </div>
+            <div class="left">
+                <h1>Blog Post Three</h1>
+                <p class="subtile" id="subtitle"><i class="fas fa-user"></i>Posted by Jane Wilson | July 27,2021</p>
+            </div>
+                </div>
+              <div class="content" id="content">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quo eius, nisi blanditiis dolore sint. Vel eius minima, temporibus libero error, fuga ullam dignissimos reprehenderit explicabo nobis, doloribus adipisci quidem maiores corrupti eligendi provident! Consequatur rerum illo labore ratione esse dolores quaerat et a possimus dolore non modi, blanditiis ullam? Quas dolorem delectus, reprehenderit voluptates, nostrum ea repellendus expedita ullam modi dolor sed amet iusto fugiat corrupti iste voluptatibus earum, ut fugit. Dicta incidunt, sequi quo minus, blanditiis illum voluptas cumque numquam consectetur ipsum perspiciatis, dolor sit minima. Nostrum, aliquam maxime cumque cupiditate numquam libero mollitia sit nesciunt obcaecati est!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente tempora omnis quae nam eaque debitis, suscipit sequi minima illum modi aliquid atque cumque ad rem nulla ipsum cum officia aperiam temporibus fuga quo? Nulla nobis eligendi quidem voluptate blanditiis nesciunt, magnam perspiciatis consequuntur similique porro quia? At perspiciatis voluptatem delectus, animi dolorem voluptates, aliquid, nulla culpa perferendis maxime dolore. Illum voluptas enim quia nisi earum optio, unde dolores explicabo, quis voluptates saepe ipsam odio a quidem dolor molestias vitae sed hic perferendis et minima facere id debitis. Tenetur accusamus quam incidunt totam fugiat? Minus, tempore dolorum, odio exercitationem rem sunt nisi unde sapiente illo quia modi possimus qui distinctio nemo assumenda magnam dicta excepturi laboriosam tenetur, veritatis laudantium recusandae. Ab perferendis, consectetur aspernatur, iusto recusandae quidem architecto optio sed quasi, explicabo voluptatem culpa animi dolorem doloribus sint eos fugit quam odio assumenda corporis? Facere atque, exercitationem aliquam maiores velit accusamus quo assumenda labore nisi, dolorum sunt necessitatibus? Repellat dolor eveniet ipsum dolore sunt illo iste accusamus est libero impedit aut similique molestias cum obcaecati, nobis autem culpa iusto id amet quae fuga distinctio ipsam laudantium facilis? Accusantium, architecto hic! Excepturi accusantium repudiandae unde qui, amet esse inventore voluptate cumque!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sed laborum earum necessitatibus commodi impedit at voluptate, a quos atque eum nisi amet aut assumenda ullam sit quam culpa eligendi repudiandae perspiciatis voluptatibus voluptatem voluptates consequuntur. Laborum aliquid, exercitationem sit earum odit quia non adipisci ipsa in provident temporibus ipsam voluptates eveniet totam aut voluptatem, corrupti, dolorum quidem quas consequuntur assumenda! Earum officia tempore nisi praesentium assumenda quisquam a commodi ipsam quidem at quae pariatur animi soluta, consequuntur eveniet aut est tenetur sed facilis, rem minus harum distinctio sequi aliquid? Tempore, inventore! Labore, necessitatibus fugiat? Dolores dignissimos facere tempora ratione.</p>
+              </div>
+          </div>   
+      </main>
+      <footer>
+        <div class="flex">
+        <div class="icons" id="icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="text" id="text">
+          Copyright &copy; 2021
+        </div>
+      </div>
+      </footer>
+
+      <script>
+      
+        const navabr= document.querySelector('#navbar')
+        let scrolled=false
+        window.onscroll= function(){
+          if(window.pageYOffset>70){
+            navabr.classList.remove('top')
+            if(!scrolled) {
+              navabr.style.transform='translateY(-70px)';
+            }
+            setTimeout(function(){
+              navbar.style.transform='translateY(0)'
+              scrolled=true;
+            },200)
+          }
+          else{
+            navabr.classList.add('top')
+            scrolled=false;
+          }
+        }
+        </script>
+</body>
+</html>
